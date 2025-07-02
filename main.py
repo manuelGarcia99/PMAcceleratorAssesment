@@ -55,7 +55,7 @@ def get_weather(lat, lon):
         'lon': lon,
         'appid': API_KEY,
         'units': 'metric',
-        'lang': 'es'
+        'lang': 'en'
     }
     response = requests.get(WEATHER_URL, params=params)
     print(f"[DEBUG] Weather response: {response}")
